@@ -1,0 +1,22 @@
+{
+  "name": "registration-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass scss/style.scss dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dSenkov/registration-form.git"
+  },
+  "author": "diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dSenkov/registration-form/issues"
+  },
+  "homepage": "https://github.com/dSenkov/registration-form#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
