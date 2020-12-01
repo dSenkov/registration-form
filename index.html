@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <title>Registration form</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="form-container">
-            <h2>What type of user are you?</h2>
-            <form class="form">
-                <fieldset class="user-type-container" data-toggle="buttons">
-                    <input type="radio" class="btn btn-light" id="newbie" name="user-type" value="Newbie">
-                    <label for="newbie">Newbie</label>
-                   
-                    <input type="radio" class="btn btn-light" id="average" name="user-type" value="Average">
-                    <label for="average">Average</label>
-                 
-                    <input type="radio" class="btn btn-light" id="master" name="user-type" value="Master">
-                    <label for="master">Master</label>
-                </fieldset>
-            </form>
-        </div>
+      <h1 class="font-weight-bold">Sign up</h1>
+      <div class="form-container">
+        <h2 class="text-center">What type of user are you?</h2>
+        <form class="form">
+          <fieldset class="user-type-container">
+            <label class="user-type-container__radio">
+              <input type="radio" name="user-type" value="Newbie" checked />
+              <span>Newbie</span>
+            </label>
+            <label class="user-type-container__radio">
+              <input type="radio" name="user-type" value="Average" />
+              <span>Average</span>
+            </label>
+            <label class="user-type-container__radio">
+              <input type="radio" name="user-type" value="Master" />
+              <span>Master</span>
+            </label>
+          </fieldset>
+          <fieldset class="user-data-container">
+            <input type="text" class="user-data-container__input" name="full-name" placeholder="Full name" />
+            <input type="email" class="user-data-container__input" name="email" placeholder="Email" />
+            <input type="password" class="user-data-container__input" name="password" placeholder="Password" />
+          </fieldset>
+          <label class="agree-with-terms">
+            <input type="checkbox" value="agree-with-terms" />
+            I agree all statements in <a href="/terms">Terms of service</a>
+          </label>
+          <button type="submit" class="btn btn-primary">Create account</button>
+          <span class="log-in text-center">Already have an account? <a href="/login">Log in</a></span>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>
