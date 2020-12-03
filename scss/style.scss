@@ -103,17 +103,30 @@ main {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
+  position: relative;
 
   &__input {
     width: 100%;
     height: 40px;
-    font: {
-      size: small;
+    font-size: small;
+    padding-left: 105px;
+  }
+
+  &__placeholder {
+    color: $grey;
+    position: absolute;
+    left: 20px;
+
+    &_full-name {
+      top: 11px;
     }
-    text-align: center;
-    &::placeholder {
-      padding-left: 20px;
-      text-align: left;
+
+    &_email {
+      top: 51px;
+    }
+
+    &_password {
+      top: 91px;
     }
   }
 }
